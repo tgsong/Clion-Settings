@@ -3,8 +3,6 @@
     <option name="detectedVersion" value="4" />
     <option name="minGWHomePath" value="D:\Devel\Software\MinGW\x64" />
     <option name="specifiedCMakeExecutablePath" value="D:\Devel\Software\CMake\bin\cmake.exe" />
-    <option name="useBundledCMake" value="false" />
-    <option name="useBundledGDB" value="false" />
     <option name="winEnvironment" value="MINGW" />
   </component>
   <component name="CodeStyleSettingsManager">
