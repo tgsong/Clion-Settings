@@ -1,0 +1,7 @@
+<templateSet group="CMake">
+  <template name="###" value="#---------------------------------------------------------------------------------------------------" description="Separator" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CMAKE" value="true" />
+    </context>
+  </template>
+</templateSet>
