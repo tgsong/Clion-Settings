@@ -4,7 +4,7 @@
     <variable name="COPY_INDEX" expression="INDEX" defaultValue="" alwaysStopAt="false" />
     <variable name="UPPER_BOUND" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="OC_STATEMENT_C" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
     </context>
   </template>
   <template name="guard" value="#pragma once&#10;&#10;$END$" description="Header guard" toReformat="false" toShortenFQNames="true">
@@ -16,6 +16,11 @@
     <variable name="YEAR" expression="date(&quot;yyyy&quot;)" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="main" value="int main(int argc, char* argv[])&#10;{&#10;    return 0;&#10;}" description="Function main()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
     </context>
   </template>
 </templateSet>
