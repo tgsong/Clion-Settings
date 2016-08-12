@@ -4,6 +4,7 @@
     <variable name="COPY_INDEX" expression="INDEX" defaultValue="" alwaysStopAt="false" />
     <variable name="UPPER_BOUND" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
+      <option name="OC_STATEMENT_C" value="true" />
       <option name="OC_STATEMENT_CPP" value="true" />
     </context>
   </template>
