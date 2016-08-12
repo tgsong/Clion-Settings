@@ -24,4 +24,9 @@
       <option name="OC_DECLARATION_CPP" value="true" />
     </context>
   </template>
+  <template name="_CLS" value="_CLS_BEGIN&#10;$END$&#10;_CLS_END" description="Namespace CLS" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
 </templateSet>
