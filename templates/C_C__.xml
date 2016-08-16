@@ -1,0 +1,32 @@
+<templateSet group="C/C++">
+  <template name="for" value="for (auto $INDEX$ = 0; $COPY_INDEX$ &lt; $UPPER_BOUND$; ++$COPY_INDEX$) {&#10;  $END$&#10;}" description="Indexed for(;;) loop" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="COPY_INDEX" expression="INDEX" defaultValue="" alwaysStopAt="false" />
+    <variable name="UPPER_BOUND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT_C" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="guard" value="#pragma once&#10;&#10;$END$" description="Header guard" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="license" value="/////////////////////////////////////////////////////////////////////////////////&#10;// The MIT License(MIT)&#10;//&#10;// Copyright (c) $YEAR$ Tiangang Song&#10;//&#10;// Permission is hereby granted, free of charge, to any person obtaining a copy&#10;// of this software and associated documentation files(the &quot;Software&quot;), to deal&#10;// in the Software without restriction, including without limitation the rights&#10;// to use, copy, modify, merge, publish, distribute, sublicense, and / or sell&#10;// copies of the Software, and to permit persons to whom the Software is&#10;// furnished to do so, subject to the following conditions :&#10;//&#10;// The above copyright notice and this permission notice shall be included in all&#10;// copies or substantial portions of the Software.&#10;//&#10;// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&#10;// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#10;// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE&#10;// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&#10;// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&#10;// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&#10;// SOFTWARE.&#10;/////////////////////////////////////////////////////////////////////////////////&#10;&#10;$END$" description="License" toReformat="false" toShortenFQNames="true">
+    <variable name="YEAR" expression="date(&quot;yyyy&quot;)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="main" value="int main(int argc, char* argv[])&#10;{&#10;    return 0;&#10;}" description="Function main()" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
+  <template name="_CLS" value="_CLS_BEGIN&#10;$END$&#10;_CLS_END" description="Namespace CLS" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
+</templateSet>
