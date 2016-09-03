@@ -26,4 +26,20 @@
       <option name="OC_DECLARATION_CPP" value="true" />
     </context>
   </template>
+  <template name="forward" value="std::forward&lt;Args&gt;(args)..." description="Forwarding arguments" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+      <option name="OC_EXPRESSION_CPP" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if ($END$) {&#10;    &#10;} else {&#10;    &#10;}&#10;" description="if ... else ..." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($END$) {&#10;    &#10;}" description="if" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
 </templateSet>
