@@ -4,13 +4,13 @@
       <option name="OC_DECLARATION_CPP" value="true" />
     </context>
   </template>
-  <template name="forr" value="for (const auto&amp; elem : $Container$) {&#10;    $END$&#10;}" description="range for" toReformat="false" toShortenFQNames="true">
+  <template name="forr" value="for (const auto&amp; elem : $Container$) {&#10;    $END$&#10;}" description="range for" toReformat="true" toShortenFQNames="true">
     <variable name="Container" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OC_STATEMENT_CPP" value="true" />
     </context>
   </template>
-  <template name="temp" value="template &lt;$END$&gt;" description="template &lt;&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="temp" value="template &lt;$END$&gt;" description="template &lt;&gt;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="OC_DECLARATION_CPP" value="true" />
     </context>
@@ -18,6 +18,11 @@
   <template name="_CLS" value="_CLS_BEGIN&#10;$END$&#10;_CLS_END" description="namespace cls" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OC_DECLARATION_CPP" value="true" />
+    </context>
+  </template>
+  <template name="/" value="/*$END$*/" description="comment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_STATEMENT_CPP" value="true" />
     </context>
   </template>
 </templateSet>
