@@ -25,4 +25,10 @@
       <option name="OC_STATEMENT_CPP" value="true" />
     </context>
   </template>
+  <template name="DEBUG" value="#ifndef NDEBUG&#10;$END$&#10;#endif" description="debug block" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_DECLARATION_CPP" value="true" />
+      <option name="OC_STATEMENT_CPP" value="true" />
+    </context>
+  </template>
 </templateSet>
