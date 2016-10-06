@@ -4,7 +4,7 @@
       <option name="OC_DECLARATION_CPP" value="true" />
     </context>
   </template>
-  <template name="forr" value="for (const auto&amp; elem : $Container$) {&#10;    $END$&#10;}" description="range for" toReformat="true" toShortenFQNames="true">
+  <template name="forc" value="for (const auto&amp; elem : $Container$) {&#10;    $END$&#10;}" description="range for const auto&amp;" toReformat="true" toShortenFQNames="true">
     <variable name="Container" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OC_STATEMENT_CPP" value="true" />
@@ -20,7 +20,8 @@
       <option name="OC_DECLARATION_CPP" value="true" />
     </context>
   </template>
-  <template name="/" value="/*$END$*/" description="comment" toReformat="false" toShortenFQNames="true">
+  <template name="fora" value="for (auto&amp; elem : $Container$) {&#10;    $END$&#10;}" description="range for auto&amp;" toReformat="false" toShortenFQNames="true">
+    <variable name="Container" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="OC_STATEMENT_CPP" value="true" />
     </context>
