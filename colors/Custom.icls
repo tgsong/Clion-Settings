@@ -1,5 +1,5 @@
 <scheme name="Custom" version="142" parent_scheme="Default">
-  <option name="LINE_SPACING" value="1.0" />
+  <option name="FONT_SCALE" value="1.0" />
   <option name="EDITOR_FONT_SIZE" value="14" />
   <option name="CONSOLE_FONT_NAME" value="Consolas" />
   <option name="CONSOLE_FONT_SIZE" value="13" />
@@ -117,7 +117,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="0" />
-        <option name="BACKGROUND" value="e6f0e6" />
+        <option name="BACKGROUND" value="fdf4dc" />
       </value>
     </option>
     <option name="XML_PROLOGUE" baseAttributes="TEXT" />
